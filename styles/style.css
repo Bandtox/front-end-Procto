@@ -1,0 +1,929 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background color for the body */
+body {
+    background-color: rgb(255, 140, 0, 0.8);
+}
+/* Style for the main container */
+.main-container {
+    background-color: white;
+    margin: 20px;
+}
+
+/* Apply a gradient background to the container */
+.container-gradient {
+    background: linear-gradient(to top right,
+            white,
+            rgba(255, 206, 147, 0.1),
+            rgba(241, 186, 118, 0.6));
+}
+
+/* Style for the navigation bar */
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for the right, center, and left navigation bar sections */
+.right-nav-bar,
+.center-nav-bar,
+.left-nav-bar {
+    flex-basis: 33.33%;
+}
+
+/* Style for navigation bar ul elements */
+.right-nav-bar ul,
+.left-nav-bar ul,
+.center-nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    flex-wrap: wrap;
+}
+
+/* Remove list styling for navigation bar li elements */
+.right-nav-bar li,
+.left-nav-bar li,
+.center-nav-bar li {
+    list-style: none;
+}
+
+/* Apply hover effect to navigation bar li elements */
+.right-nav-bar li:hover,
+.left-nav-bar li:hover,
+.center-nav-bar li:hover {
+    transform: scale(1.1);
+}
+
+/* Style for navigation bar links */
+.right-nav-bar a,
+.left-nav-bar a,
+.center-nav-bar a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+/* Style for center-nav-bar image */
+.center-nav-bar img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for left-nav-bar image */
+.left-nav-bar img {
+    margin-right: 10px;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for the search container */
+.search-container {
+    display: flex;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+/* Add a gradient overlay to the search container */
+.search-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, to top, white, white, rgba(241, 186, 118, 0.3));
+    pointer-events: none;
+}
+
+/* Style for the search input */
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* Style for the search icon */
+.search-icon {
+    padding: 5px;
+    cursor: pointer;
+    max-width: 30px;
+}
+
+/* Style for the main content container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style for the text tag section */
+.text-tag {
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Style for the image tag section */
+.img-tag {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.navigation{
+    justify-content: center;
+}
+
+/* Style for h1-div */
+.h1-div {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Style for h1 in text-tag */
+.text-tag h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Style for images in text-tag */
+.text-tag img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+    /* Apply drop shadow effect */
+    filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.6));
+}
+
+/* Style for animation element */
+#animation {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-right: 10%;
+    /* Apply drop shadow effect */
+    filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.6));
+}
+/* Style for text in text-tag section */
+.text-tag p {
+    font-family: cursive;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: center; 
+}
+/* Style for order button */
+.order-button {
+    position: relative;
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: serif;
+}
+
+/* Apply hover effect to order button */
+.order-button:hover {
+    background-color: #ff6b00;
+}
+
+/* Style for the arrow in the order button */
+.order-button::after {
+    padding-left: 10px;
+    content: "→";
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+/* Style for the About Us section */
+.about-us {
+    background-color: white;
+    display: flex;
+}
+
+/* Style for the container within the About Us section */
+.about-container {
+    background: linear-gradient(to bottom left,
+            white,
+            rgba(255, 206, 147, 0.1),
+            rgba(241, 186, 118, 0.6));
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Style for the image container within the About Us section */
+.about-img {
+    width: 40%;
+    margin-left: 150px;
+    transform: rotate(-15deg);
+    margin-right: 50px;
+}
+
+/* Style for images within the About Us section */
+.about-img img {
+    width: 100%;
+    height: auto;
+    /* Apply drop shadow effect */
+    filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.6));
+}
+
+/* Style for h1-container within the About Us section */
+.h1-container {
+    width: 60%;
+    display: inline;
+}
+
+/* Style for h1 within the About Us section */
+.h1-container h1 {
+    color: #ff6b00;
+    font-family: 'Fuggles';
+    font-size: 50px;
+    margin-left: 30px;
+    margin-bottom: -35px;
+}
+
+/* Style for h2 within h1-div and h1-container in About Us section */
+.h1-div h2,
+.h1-container h2 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 15px;
+}
+
+/* Style for paragraphs within the About Us section */
+.h1-container p {
+    padding-top: 20px;
+    font-family: cursive;
+}
+
+/* Style for the Popular Dishes section */
+.popular-dishes {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for the div-popular-dishes container */
+.div-popular-dishes {
+    background: linear-gradient(to top left,
+            white,
+            rgba(255, 206, 147, 0.1),
+            rgba(241, 186, 118, 0.6));
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Style for the section heading in Popular Dishes section */
+.section-heading {
+    margin:20px 20px 0px 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+/* Style for the product cards within Popular Dishes section */
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin: 50px;
+}
+
+/* Style for individual product cards */
+.product-card {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+/* Apply hover effect to product cards */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style for product images within product cards */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    /* Apply drop shadow effect */
+    filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.6));
+}
+
+/* Style for product information within product cards */
+.product-info {
+    margin-top: 15px;
+}
+
+/* Style for product name within product cards */
+.product-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+/* Style for product description within product cards */
+.product-description {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Style for product price within product cards */
+.product-price {
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: #ff8c00;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Style for the New Product Banner section */
+.new-product-banner {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for the new-product-container within New Product Banner */
+.new-product-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 100px;
+    background: linear-gradient(to bottom right,
+            white,
+            rgba(255, 206, 147, 0.1),
+            rgba(241, 186, 118, 0.4));
+    margin-top: 50px;
+}
+
+/* Style for the product-img within New Product Banner */
+.product-img {
+    margin-right: 100px;
+}
+
+/* Style for images within the product-img */
+.product-img img {
+    width: 350px;
+    height: auto;
+    /* Apply drop shadow effect */
+    filter: drop-shadow(16px 16px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* Style for the Newsletter section */
+.newsletter {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: -100px;
+}
+
+/* Style for the newsletter-content within Newsletter section */
+.newsletter-content {
+    width: 100%;
+    background: linear-gradient(to top right,
+            white,
+            rgba(255, 206, 147, 0.1),
+            rgba(241, 186, 118, 0.4));
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style for the box-container within Newsletter section */
+.box-container {
+    margin: 30px 50px 0px 50px;
+    background-color: rgb(56, 42, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the left-content and its image within Newsletter section */
+.left-content img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    /* Apply drop shadow effect */
+    filter: drop-shadow(16px 16px 0px rgba(0, 0, 0, 0.6));
+}
+
+/* Style for the right-content within Newsletter section */
+.right-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Style for the newsletter heading within right-content */
+.right-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'fuggles';
+    color: #ff8c00;
+}
+
+/* Style for the newsletter-heading within right-content */
+.right-content .newsletter-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Style for the input-container within Newsletter section */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    /* Spacing between input and button */
+    align-items: center;
+}
+
+/* Style for the email input within input-container */
+.input-container input[type="email"] {
+    flex: 1;
+    /* Allow the input to grow and take available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /* Add spacing between the input and button */
+}
+
+/* Style for the subscribe button within input-container */
+.input-container .subscribe-button {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Apply hover effect to the subscribe button */
+.input-container .subscribe-button:hover {
+    background-color: #ff6b00;
+}
+
+/* Style for the footer section */
+.site-footer {
+    background-color: white;
+    margin-top: -100px;
+}
+/* Style for the footer-container within footer section */
+.footer-container {
+    background: linear-gradient(to bottom,
+            white,
+            rgba(241, 186, 118, 0.5));
+}
+/* Style for each footer section */
+.footer-section {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+/* Style for the footer-content within footer section */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+/* Style for footer section headings */
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: cursive;
+    margin-right: 10px;
+}
+
+/* Style for ul elements within footer sections */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 700;
+}
+
+/* Style for li elements within footer sections */
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+/* Style for anchor links within footer sections */
+.footer-section a {
+    text-decoration: none;
+    color: rgb(123, 119, 119);
+}
+
+/* Style for paragraphs within footer sections */
+.footer-section p {
+    margin-right: 5%;
+    font-size: 16px;
+}
+
+/* Style for the bottom-container within footer section */
+.bottom-container {
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for social media icons */
+.bottom-container img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for Copyright */
+.bottom-container p {
+    font-size: 10px;
+}
+
+/* Style for social media icons */
+.social-media-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* Style for social media links within the icons */
+.social-media-icons a {
+    margin-right: 10px;
+}
+
+/* Style for payment options icons */
+.payment-options {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* Style for payment option icons */
+.payment-options img {
+    margin-left: 10px;
+}
+.Main-Menu{
+    padding-left: 50px;
+}
+/*Remove Hamburger Nav for larger screens*/
+@media (min-width: 961px) {
+    .mobile-container {
+        display: none;
+    }
+    .for-phone{
+        display: none;
+    }
+}
+
+/* Styles for screens with a max-width of 960px */
+@media only screen and (max-width: 960px) {
+    .navigation, 
+    .text-tag h2, 
+    .text-tag img,
+    .chilli {
+        display: none;
+    }
+
+    .main-container {
+        margin: 10px;
+    }
+
+    .mobile-container {
+        max-width: 960px;
+        margin: auto;
+        background-color: transparent;
+        height: 100px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .img-tag {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .h1-div {
+        margin-left: 10px;
+    }
+
+    .text-tag img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .order-button {
+        padding: 10px 15px 10px 20px;
+        font-size: 16px;
+    }
+
+    .order-button::after {
+        font-size: 12px;
+        right: 5px;
+    }
+
+    .about-container {
+        margin-top: 50px;
+    }
+
+    .about-img {
+        width: 50%;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .h1-container {
+        width: 100%;
+    }
+
+    .h1-container h1,
+    .h1-container h2 {
+        font-size: 40px;
+    }
+
+    .h1-container p {
+        font-size: 16px;
+    }
+
+    .product-card {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .product-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .product-name {
+        font-size: 18px;
+    }
+
+    .product-description {
+        font-size: 10px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+    .new-product-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .product-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .product-img img {
+        width: 250px;
+    }
+
+    .right-content h1 {
+        font-size: 30px;
+    }
+
+    .right-content .newsletter-heading {
+        font-size: 16px;
+    }
+
+    .box-container {
+        margin: 10px;
+    }
+
+    .input-container {
+        flex-direction: row;
+    }
+
+    .input-container input[type="email"] {
+        margin-bottom: 0;
+    }
+
+    .footer-section {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: transparent;
+        position: relative;
+        display: block;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media-icons {
+        margin-top: 0;
+    }
+
+    .bottom-container p {
+        font-size: 8px;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .logo a {
+        display: block;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: 700;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+/* Styles for screens with a max-width of 480px */
+@media screen and (max-width: 480px) {
+    .main-container {
+        margin: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-tag {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .text-tag h1 {
+        font-size: 30px;
+        text-align:  center;
+    }
+
+    .order-button {
+        padding: 10px 10px 10px 15px;
+        font-size: 14px;
+    }
+
+    .order-button::after {
+        font-size: 10px;
+        right: 2px;
+    }
+
+    .about-container {
+        margin-top: 20px;
+    }
+
+    .about-img {
+        width: 70%;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .h1-container h1,
+    .h1-container h2 {
+        font-size: 30px;
+    }
+
+    .h1-container p {
+        font-size: 14px;
+    }
+
+    .product-card {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .product-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 9px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .product-img img {
+        width: 150px;
+    }
+
+    .right-content h1 {
+        font-size: 24px;
+    }
+
+    .right-content .newsletter-heading {
+        font-size: 14px;
+    }
+
+    .box-container {
+        margin: 5px;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container input[type="email"] {
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section h3 {
+        margin-top: 0;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media-icons {
+        margin-top: 0;
+    }
+
+    .bottom-container p {
+        font-size: 6px;
+    }
+}

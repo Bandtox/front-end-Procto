@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Center</title>
+    <!-- Include external CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Include external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Include external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="res/favicon.png">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container-gradient">
+            <header>
+                <!-- Simulate a smartphone / tablet -->
+                <div class="mobile-container">
+
+                    <!-- Top Navigation Menu -->
+                    <nav class="topnav">
+                        <div class="logo center-nav-bar">
+                            <a href="#">
+                                <!-- Burger logo -->
+                                <h1>B<img src="res/icon.png" alt="icon image">RGER</h1>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <div id="myLinks">
+                                <a href="#">Menu</a>
+                                <a href="#">Offer</a>
+                                <a href="#">Order Track</a>
+                                <a href="#">Cart</a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+                </div>
+                <div class="navigation">
+                    <!-- Right navigation bar with menu links -->
+                    <nav class="right-nav-bar">
+                        <ul>
+                            <li>
+                                <a href="#">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#">Offer</a>
+                            </li>
+                            <li>
+                                <a href="#">Order Track</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Center navigation bar with logo -->
+                    <nav class="center-nav-bar">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <!-- Burger logo -->
+                                    <h1>B<img src="res/icon.png" alt="icon image">RGER</h1>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Left navigation bar with search and cart -->
+                    <nav class="left-nav-bar">
+                        <ul>
+                            <li>
+                                <div class="search-container">
+                                    <!-- Search input field -->
+                                    <input type="text" class="search-input" placeholder="Search">
+                                    <div class="search-icon">
+                                        <!-- Search icon image -->
+                                        <img src="res/search.png" alt="search">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="res/bag.png" alt="icon image">Cart</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- Introductory section and call to action -->
+            <main>
+                <section class="intro">
+                    <div class="container">
+                        <div class="text-tag">
+                            <!-- Main headline -->
+                            <h1 class="navigation">Juicy Burgers that Make</h1>
+                            <!-- Subheadline with burger image -->
+                            <div class="h1-div navigation">
+                                <!-- Burger image and text -->
+                                <img src="res/burger1.jpg" alt="Burger">
+                                <h1>Your Buds Dance!</h1>
+                            </div>
+                            <!-- Main headline for phone -->
+                            <h1 class="for-phone">Juicy Burgers that Make Your Buds Dance!</h1>
+                            <p>Savor our delectable burgers,
+                                meticulously prepared to delight your <br>taste buds with an
+                                exquisite flavor experience.
+                            </p>
+                            <!-- Order button -->
+                            <div class="button-container">
+                                <button class="order-button">Order Now</button>
+                            </div>
+                        </div>
+                        <!-- Decorative chili image -->
+                        <div class="img-tag">
+                            <img id="animation" src="res/animation1.gif" alt="gif">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        </main>
+        <!-- Section introducing "About Us" information -->
+        <section class="about-us">
+            <!-- Container for the about section content -->
+            <div class="about-container">
+                <!-- Image representing the about section -->
+                <div class="about-img">
+                    <img src="res/burger2.png" alt="Burger Image">
+                </div>
+                <!-- Container for text and headings -->
+                <div class="h1-container">
+                    <!-- Main heading with italic style -->
+                    <h1><i>About Us</i></h1>
+                    <div class="text-tag">
+                        <!-- Subheading with an image -->
+                        <div class="h1-div">
+                            <h2>We Provide</h2>
+                            <img src="res/burger3.jpg" alt="Burger">
+                        </div>
+                        <!-- Subheading with description-->
+                        <h2>Healthy Foods!</h2>
+                        <!-- Main headline for phone -->
+                        <h3 class="for-phone">We Provide Healthy Foods!</h3>
+                        <p>"We use the finest ingredients, pay meticulous <br>attention to every
+                            detail, and employ our culinary <br>expertise to create burgers that
+                            are second to none."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section displaying Popular Burgers -->
+        <section class="popular-dishes">
+            <div class="div-popular-dishes">
+                <!-- Section displaying Popular Dishes -->
+                <h1 class="section-heading">Popular Dishes</h1>
+                <!-- Section displaying Popular Dishes -->
+                <div class="product-cards">
+                    <!-- Product card for Deluxe Burger -->
+                    <article class="product-card">
+                        <img src="res/burger4.png" alt="Deluxe Burger">
+                        <div class="product-info">
+                            <h3 class="product-name">Deluxe Burger</h3>
+                            <p class="product-description">A mouthwatering combination of
+                                premium meat patty, fresh vegetables, and special sauce.</p>
+                            <p class="product-price">&#8377;249</p>
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </article>
+                    <!-- Product card for Classic Cheeseburger -->
+                    <article class="product-card">
+                        <img src="res/burger5.png" alt="Classic Cheeseburger">
+                        <div class="product-info">
+                            <h3 class="product-name">Classic Cheeseburger</h3>
+                            <p class="product-description">Our signature cheeseburger with a
+                                perfect blend of cheese, lettuce, and tomatoes.</p>
+                            <p class="product-price">&#8377;99</p>
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </article>
+                    <!-- Product card for Spicy Jalapeño Burger -->
+                    <article class="product-card">
+                        <img src="res/burger6.png" alt="Spicy Jalapeño Burger">
+                        <div class="product-info">
+                            <h3 class="product-name">Spicy Jalapeño Burger</h3>
+                            <p class="product-description">For those who crave heat! A spicy
+                                burger with jalapeño peppers and fiery sauce.</p>
+                            <p class="product-price">&#8377;159</p>
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Section highlighting a newly added product -->
+        <section class="new-product-banner">
+            <!-- Container for the new product content -->
+            <div class="new-product-container">
+                <!-- Main heading with italic style -->
+                <div class="h1-container">
+                    <h1><i>Newly added</i></h1>
+                    <!-- Container for text and subheading -->
+                    <div class="text-tag">
+                        <!-- Subheading with strong emphasis -->
+                        <div class="h1-div">
+                            <h2><strong>Ultimate BBQ Burger</strong></h2>
+                        </div>
+                        <!-- Description of the new product -->
+                        <p>It's mouthwatering blend of grilled meat, tangy BBQ sauce,
+                            and fresh veggies.
+                        </p>
+                    </div>
+                </div>
+                <!-- Image of the newly added product (Ultimate BBQ Burger) -->
+                <div class="product-img">
+                    <img src="res/burger7.png" alt="Burger Image">
+                </div>
+            </div>
+        </section>
+        <!-- Section for subscribing to the newsletter -->
+        <section class="newsletter">
+            <!-- Container for newsletter content -->
+            <div class="newsletter-content">
+                <div class="box-container">
+                    <!-- Left content, an image -->
+                    <div class="left-content">
+                        <img src="res/FrenchFries.png" alt="French Fries">
+                    </div>
+                    <!-- Right content containing the newsletter subscription form -->
+                    <div class="right-content">
+                        <!-- Main heading with italic style -->
+                        <h1><i>Newsletter</i></h1>
+                        <!-- Subheading for the newsletter section -->
+                        <h2 class="newsletter-heading">Subscribe to Our Newsletter</h2>
+                        <form class="newsletter-form" action="#" method="post">
+                            <!-- Container for input field and subscribe button -->
+                            <div class="input-container">
+                                <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
+                                <!-- Container for input field and subscribe button -->
+                                <button type="submit" class="subscribe-button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <!-- Footer section at the bottom of the webpage -->
+        <footer class="site-footer">
+            <!-- Footer section at the bottom of the webpage -->
+            <div class="footer-container">
+                <!-- Main content section, including navigation links -->
+                <div class="footer-content">
+                    <!-- Main Menu -->
+                    <div class="footer-section Main-Menu">
+                        <h3>Main Menu</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menus</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Offers</a></li>
+                        </ul>
+                    </div>
+                    <!-- Section for information links -->
+                    <div class="footer-section Main-Menu">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Reservation</a></li>
+                        </ul>
+                    </div>
+                    <!-- Section for address information -->
+                    <div class="footer-section Main-Menu">
+                        <h3>Address</h3>
+                        <p style="color: rgb(123, 119, 119);">Shyamal County,<br>
+                            Waghodia Road,<br>Vadodara, Gujarat,<br>390019.</p>
+                    </div>
+                    <!-- Section for contact information -->
+                    <div class="footer-section Main-Menu">
+                        <h3>Mail Us</h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <p style="color: rgb(123, 119, 119);">200303125083@gmail.com</p>
+                        </ul>
+                    </div>
+                    <div class="footer-section Main-Menu">
+                        <h3>Call Us</h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <p style="color: rgb(123, 119, 119);">91 9142877459</p>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Bottom section including social media, copyright, and payment options -->
+                <div class="footer-bottom">
+                    <div class="bottom-container">
+                        <!-- Container for social media icons -->
+                        <div class="social-media-icons">
+                            <a href="#"><img src="res/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="res/twitter.png" alt="Twitter"></a>
+                            <a href="#"><img src="res/instagram.png" alt="Instagram"></a>
+                        </div>
+                        <!-- Copyright notice -->
+                        <p>&copy; 2023 Burger Center. All rights reserved.</p>
+                        <!-- Container for payment options icons -->
+                        <div class="payment-options">
+                            <img src="res/RuPay.png" alt="RuPay">
+                            <img src="res/visa.png" alt="Visa">
+                            <img src="res/mastercard.png" alt="Mastercard">
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
