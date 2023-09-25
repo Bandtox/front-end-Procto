@@ -6,10 +6,9 @@
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Demo](#demo)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Technologies Used](#technologies-used)
 
 ## Introduction
 
@@ -25,11 +24,6 @@ The **Burger Center** website is a simple and visually appealing webpage that de
 
 - **JavaScript Functionality**: A JavaScript function is implemented for mobile navigation, enhancing user interaction.
 
-## Demo
-
-![Demo Gif](demo.gif)
-
-You can view a live demo of the Burger Center website [here](https://www.example.com).
 
 ## Installation
 
