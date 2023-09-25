@@ -29,8 +29,8 @@ The **Burger Center** website is a simple and visually appealing webpage that de
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `https://github.com/Bandtox/front-end-Procto.git`
-2. Navigate to the project directory: `cd burger-center`
+1. Clone the repository: `git clone https://github.com/Bandtox/front-end-Procto.git`
+2. Navigate to the project directory: `cd front-end-Procto`
 3. Open the `index.html` file in your preferred web browser.
 
 ## Usage
